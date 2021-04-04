@@ -1,10 +1,3 @@
-html {
-    --test: #ED553B;
-    --quiz: #F6D55C;
-    --essay: #3CAEA3;
-    --homework: #20629B;
-    --reading: #173F5F;
-}
 /*Calendar table*/
 #cal_wrap {
     position: absolute;
@@ -31,8 +24,10 @@ html {
 }
 
 td {
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
     width: calc(100% / 7);
+    height: 3em;
+    overflow-y: auto;
     text-align: left;
     vertical-align: top;
 }
@@ -118,6 +113,7 @@ button:hover {
 
 #upcoming_list {
     float: left;
+    text-align: left;
 }
 
 #des_sec {

@@ -2,10 +2,47 @@
 <html>
     <head>
         <title>StudentFit: Workouts</title>
+        <link href="roboto.css" rel="stylesheet">
+        <link rel="stylesheet" href="universal.css">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+        <link rel="stylesheet" href="workout.css">
     </head>
     <body>
-        <div id="tab_a">
-            <img src="workout-leg.jpg">
+        <div id="side_tab">
+            <div id="brandName">StudentFit</div>
+            <button  id="home_page" class="side_"><a href = "/frontend/about.html">
+                Home
+            </a></button>
+            <button id="calendar_page" class="side_"><a href = "/frontend/calendar.html">
+                Calendar
+            </a></button>
+            <button id="todo_list_page" class="side_"><a href = "/frontend/todo.html">
+                To-do List
+            </a></button>
+            <button id="workout_page" class="side_"><a href = "/frontend/workout.html">
+                Workout Schedule
+            </a></button>
+            <button id="food_page" class="side_"><a href = "/frontend/food_recommend.html">
+                Food Recommendations
+            </a></button> 
         </div>
+            
+        <div id="main_txt"><i>Workouts based on your Schedule</i></div>
+        <div class="workout" id="leg">
+            <img src="/frontend/workout-leg.jpg" alt="Leg workout" class="rounded">
+            <div id="text">Squats</div>
+            <div class="day" id="mov"><b id="l">Day:</b> Example</div>
+            <div class="time" id="mov"><b id="l">Time:</b> </div>
+            <div class="burn" id="mov"><b id="l">Burn:</b> </div>
+        </div>
+        <div class="workout" id="leg">
+            <img src="/frontend/workout-leg.jpg" alt="Leg workout" class="rounded">
+            <div id="text">Squats</div>
+            <div class="day" id="mov"><b id="l">Day:</b> Example</div>
+            <div class="time" id="mov"><b id="l">Time:</b> </div>
+            <div class="burn" id="mov"><b id="l">Burn:</b> </div>
+        </div>
+        
+        <script src="workout.js"></script>
     </body>
 </html>

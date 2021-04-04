@@ -14,9 +14,10 @@ default_color_scheme = {
 
 event_list_loaded = []
 
-Date.prototype.getWeeksInMonth = function() {
-    var firstDay = new Date(this.setDate(1)).getDay();
-    var totalDays = new Date(this.getFullYear(), this.getMonth() + 1, 0).getDate();
+getWeeksInMonth = function(date) {
+    const deepC = new Date(date.getTime())
+    var firstDay = new Date(deepC.setDate(1)).getDay();
+    var totalDays = new Date(deepC.getFullYear(), deepC.getMonth() + 1, 0).getDate();
     return Math.ceil((firstDay + totalDays) / 7);
 }
 
@@ -81,8 +82,8 @@ const create_cal = (calendarDoc, event_list=[]) => {
                 }
             }
         }
-
-        day.style.height = `calc(100px - 0.5em)`
+        console.log(100 / getWeeksInMonth(currentDay))
+        day.style.height = `calc(${(window.innerHeight-110) /getWeeksInMonth(currentDay)}px)`
         startWeek = false
         currentDay.setDate(currentDay.getDate() + 1)
     }

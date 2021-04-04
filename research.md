@@ -2,18 +2,18 @@ For all the workouts like "Upper Body" a link to a workout video will be provide
 Also options for shorter workouts will be given for stressful/busy days. The section of body you are working out will stay constant each week 
 
 Men's Workout (more heavy lifting and periodically increasing weight as you get stronger):
-Monday: Upper Body
-Wednesday: Core
-Friday: Legs
-Saturday: Upper Body
-Sunday: Yoga (flexibility)
+Monday: Upper Body (Long) https://www.youtube.com/watch?v=30c8d9smbsE (Short) https://www.youtube.com/watch?v=CbNuagSQAUQ
+Wednesday: Core (Long) https://www.youtube.com/watch?v=N5ViYeGJOCA (Short) https://www.youtube.com/watch?v=MznqHWzCv8s
+Friday: Legs (Long) https://www.youtube.com/watch?v=CnfitL4Rl0o (Short) https://www.youtube.com/watch?v=ISk3x9E7ars
+Saturday: Upper Body (Long) https://www.youtube.com/watch?v=n3gTHy6WR9U (Short) https://www.youtube.com/watch?v=CgdO8doSOP0
+Sunday: Yoga (Long) https://www.youtube.com/watch?v=6hZIzMpHl-c (Short) https://www.youtube.com/watch?v=XCIviBT3Txc
 
 Women's Workout (more interval training and less weight lifting):
-Monday: Legs
-Wednesday: Core
-Friday: Upper Body
-Saturday: Legs
-Sunday: Yoga (flexibility)
+Monday: Legs (Long) https://www.youtube.com/watch?v=Bf8uyQOmqU8 (Short) https://www.youtube.com/watch?v=9l5kjL2JedM
+Wednesday: Core (Long) https://www.youtube.com/watch?v=5i8y-_cbwgw (Short) https://www.youtube.com/watch?v=glxrwC9zsHY
+Friday: Upper Body (Long) https://www.youtube.com/watch?v=rOf4tRtuvyA (Short) https://www.youtube.com/watch?v=0zhvUV1bAVQ
+Saturday: Legs (Long) https://www.youtube.com/watch?v=dCgmZ66Qa9k (Short) https://www.youtube.com/watch?v=HVyt7ywsOQ8
+Sunday: Yoga (Long) https://www.youtube.com/watch?v=6hZIzMpHl-c (Short) https://www.youtube.com/watch?v=XCIviBT3Txc
 
 Men's Diet (around 2500 calorie diet):
 Drink water throughout the day

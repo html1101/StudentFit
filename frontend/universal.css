@@ -5,20 +5,25 @@ html {
     --shade-1: #F1517F;
     --side-color: #0F1223;
     --size-timeline: 15%;
+    --test: #ED553B;
+    --quiz: #F6D55C;
+    --essay: #3CAEA3;
+    --homework: #20629B;
+    --reading: #173F5F;
     background: white;
     font-family: "Roboto", "Courier New";
 }
 #side_tab {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    left:  0;
     width: 25%;
-    height: 100%;
+    height: 100vh;
     background: var(--side-color);
     z-index: 3;
     box-shadow: 1px 1px 0.5em rgba(0, 0, 0, 0.7);
 }
-#home_page {
+/* #home_page {
     text-align: center;
     width: 100%;
     margin-top: 1em;
@@ -43,7 +48,7 @@ html {
 #calendar_page {
     text-align: center;
     width: 100%;
-    margin-top: 3.5em;
+    margin-top: 3em;
     height: 10vh;
     font-size: 30px;
     border-radius: 25px;
@@ -69,5 +74,44 @@ html {
     border-radius: 25px;
     padding: 20px;
     background-color: white;
+} */
+
+a {
+    text-decoration: none;
 }
 
+#brandName {
+    color: white;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.side_ {
+    position: relative;
+    background: transparent;
+    display: block;
+    width: calc(100% - 1em);
+    left: 0.5em;
+    margin-top: 1em;
+    min-height: 2em !important;
+    height: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto";
+    transition: 0.5s;
+    float: left;
+    text-align: left;
+}
+
+a {
+    color: white;
+    transition: 0.5s;
+}
+
+.side_:hover {
+    transition: 0.5s;
+    background: var(--essay);
+}

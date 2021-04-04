@@ -1,0 +1,23 @@
+html {
+    margin-left: 25%;
+}
+
+#info_tab {
+    position: absolute;
+    width: calc(90% - var(--size-timeline)); /*- Width of timeline bar*/
+    left: 25%;
+    height: 100%;
+    top: 0;
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+}
+
+#food_rec_table {
+    position: relative;
+    left: 25%;
+    top: calc(50% - 300px);
+    vertical-align: middle;
+}

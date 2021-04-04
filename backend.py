@@ -1,5 +1,7 @@
 import flask
-from flask import request, jsonify, Response
+from flask import request, jsonify, Response, send_file
+from PIL import Image
+import os.path
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -15,21 +17,27 @@ MIME_types = {
     "html": "text/html",
     "css": "text/css",
     "js": "text/javascript",
-    "csv": "text/csv"
+    "csv": "text/csv",
+    "jpg": "image/jpeg",
+    "ico": "image/vnd.microsoft.icon"
 }
 
 @app.route("/frontend/<string:file_name>", methods=['GET'])
 def get_req(file_name):
     # Read the file here and return it
     try:
-        text = open(F"frontend/{file_name}", "r+").read()
+        file_ending = file_name.split(".")[1]
     except:
-        file_name = "404.html"
-        text = open(F"frontend/404.html", "r+").read()
+        # Assume 404 error
+        file_ending = "html"
+
+    if not os.path.isfile(F"frontend/{file_name}"):
+        # File doesn't exist
+        file_name = "about.html"
     # Look at the MIME type based on the end of the file name(ex. if .html, send as a text/html file, etc)
     # Then return the read file and its mime type.
     # Using try: (read file and return text) and except: Response(404 text)
-    return Response(text, mimetype=MIME_types.get(file_name.split(".")[1], "text/plain"))
+    return send_file(F"frontend/{file_name}", mimetype=MIME_types.get(file_ending, "text/html"))
 
 
 @app.route("/events.csv", methods=['POST'])

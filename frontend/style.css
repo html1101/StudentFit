@@ -2,7 +2,7 @@ html {
     --shade-1: #F1517F;
     --side-color: #0F1223;
     --size-timeline: 15%;
-    background: #aeaeaf;
+    background: #F6F7FB;
     font-family: "Arial", "Courier New";
 }
 
@@ -16,7 +16,7 @@ html {
 
 #about_app {
     position: fixed; 
-    left: 50%; 
+    left: 62%; 
     top: calc(50% - 125px);
     margin-left: -245px; 
     vertical-align: middle;
@@ -27,4 +27,11 @@ html {
     border-radius: 25px;
     padding: 20px;
     
+}
+#center_page {
+    position: absolute;
+    width: calc(90% - var(--size-timeline)); /*- Width of timeline bar*/
+    left: 25%;
+    height: 100%;
+    top: 0;
 }
