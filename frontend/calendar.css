@@ -1,0 +1,151 @@
+html {
+    --test: #ED553B;
+    --quiz: #F6D55C;
+    --essay: #3CAEA3;
+    --homework: #20629B;
+    --reading: #173F5F;
+}
+/*Calendar table*/
+#cal_wrap {
+    position: absolute;
+    width: calc(75% - var(--size-timeline)); /*- Width of timeline bar*/
+    left: 25%;
+    height: 100%;
+    top: 0; /*For now. Maybe add search bar.*/
+    background: #F6F7FB;
+    font-family: "Roboto", "Courier New";
+}
+#cal_txt {
+    padding-left: 1em;
+    padding-top: 1em;
+    /* font-weight: 900; */
+}
+
+#calendar {
+    position: relative;
+    width: 95%;
+    background: white;
+    margin-top: -4em;
+    top: -0.5em;
+    margin-left: calc(5% / 2);
+}
+
+td {
+    overflow-wrap: break-word;
+    width: calc(100% / 7);
+    text-align: left;
+    vertical-align: top;
+}
+
+#small-txt {
+    font-size: 10px;
+    /* color: white; */
+}
+
+#month_yr {
+    position: relative;
+    text-align: right;
+    --wid: 10em;
+    width: var(--wid);
+    height: 2em;
+    top: -2em;
+    background: transparent;
+    left: calc(100% - var(--wid) - 6em);
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+
+button {
+    position: relative;
+    width: 5em;
+    height: 2em;
+    outline: none;
+    border: 2px solid var(--shade-1);
+    background: var(--shade-1);
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button:hover {
+    transition: 0.5s;
+    background: white;
+    color: var(--shade-1);
+}
+
+#evttype, #eventN, #dateN {
+    width: 10em;
+    height: 2em;
+    margin-top: 5px;
+}
+
+#create {
+    float: right;
+    top: -2em;
+    right: 0.5em;
+}
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(214, 207, 207, 0.2);
+    z-index: 4;
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
+}
+
+#top_sec {
+    position: relative;
+    text-align: center;
+    width: 75%;
+    height: 100%;
+    background: white;
+    left: calc(50% - 75% / 2);
+    top: calc(50% - 12em);
+}
+#full_white {
+    position: fixed;
+    text-align: center;
+    width: 75%;
+    height: 100%;
+    background: white;
+    left: calc(50% - 75% / 2);
+    top: 0;
+}
+
+#upcoming_list {
+    float: left;
+}
+
+#des_sec {
+    font-size: 30;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#submit_pop {
+    width: 10em;
+    height: 3em;
+    border-radius: 20px;
+}
+
+
+#side_upcoming {
+    position: fixed;
+    top: 0;
+    left: calc(100% - var(--size-timeline));
+    width: var(--size-timeline);
+    height: 100%;
+    background: white;
+    text-align: center;
+}
+#txt_upcoming {
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #aeaeaf;
+    font-size: 12px;
+    margin-top: 5px;
+}

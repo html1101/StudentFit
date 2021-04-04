@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StudentFit - Calendar</title>
+        <link rel="stylesheet" href="universal.css">
+        <link rel="stylesheet" href="calendar.css">
+        <link href="roboto.css" rel="stylesheet">
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        <div id="side_tab">
+
+        </div>
+        <div id="cal_wrap">
+            <div id="cal_txt">
+                CALENDAR
+            </div>
+            <input type="month" id="month_yr">
+            <button id="create">+ New</button>
+            <table id="calendar">
+                <tr id="days_of_week">
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </table>
+        </div>
+        <div id="popup">
+            <div id="full_white"></div>
+            <div id="top_sec">
+                <div id="des_sec">
+                    Create Event
+                </div>
+                <br>
+                Event Name:
+                <br>
+                <input type="text" id="eventN">
+                <br>
+                <br>
+                Event Date:
+                <br>
+                <input type="date" id="dateN">
+                <br>
+                <br>
+                Event Type:
+                <br>
+                <select name="evttype" id="evttype">
+                    <option value="test">Test</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="essay">Essay</option>
+                    <option value="homework">Homework</option>
+                    <option value="reading">Reading</option>
+                </select>
+                <br>
+                <br>
+                <button id="submit_pop">Submit</button>
+            </div>
+        </div>
+        <div id="side_upcoming">
+            <div id="txt_upcoming">TIMELINE</div>
+            <ul id="upcoming_list"></ul>
+        </div>
+        <script src="calendar.js"></script>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+const xhttp = new XMLHttpRequest()
+

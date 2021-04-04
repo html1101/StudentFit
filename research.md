@@ -1,0 +1,51 @@
+For all the workouts like "Upper Body" a link to a workout video will be provided. 
+Also options for shorter workouts will be given for stressful/busy days. The section of body you are working out will stay constant each week 
+
+Men's Workout (more heavy lifting and periodically increasing weight as you get stronger):
+Monday: Upper Body
+Wednesday: Core
+Friday: Legs
+Saturday: Upper Body
+Sunday: Yoga (flexibility)
+
+Women's Workout (more interval training and less weight lifting):
+Monday: Legs
+Wednesday: Core
+Friday: Upper Body
+Saturday: Legs
+Sunday: Yoga (flexibility)
+
+Men's Diet (around 2500 calorie diet):
+Drink water throughout the day
+2 liters of water each day is recommended
+Avoid sugar whenever possible
+About 56 grams of protien a day through either meat or plant based protien
+250-325 grams of carbs per day
+2-3 servings of fruits each day
+4-5 servings of vegetables each day
+3 servings of dairy per day
+Make sure to have some protien right after your workout
+
+Women's Diet (around 2000 calorie diet):
+Drink water throughout the day
+2 liters of water each day is recommended
+About 46 grams of protien a day through either meat or plant based protien
+225-275 grams of carbs per day
+2-3 servings of fruits per day
+4-5 servings of vegetables each day
+3 servings of dairy per day
+Make sure to have some protien right after your workout
+
+What to eat before/during a test, project, or any stressful assignment:
+Before:
+Fatty Fish has Omega 3's which is good for your memory (night before test)
+Caffiene like Coffee or Green Tea (morning of test) (coffee only if you are at least 16)
+Dark Chocolate helps with concentration and memory (morning of test)
+During:
+Chewing gum has proven to improve alertness
+
+What to snack on while working on assignments:
+Unsalted Trail Mix has nuts which are good for an energy boost
+Greek yogurt is very high in protien and filling if you are hungry
+Dark Chocolate in moderation has antioxidants and natural stimulants which are good for blood flow to your brain
+Fruit Salads give you minerals, fibers, and a brain boost

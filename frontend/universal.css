@@ -1,0 +1,73 @@
+/*
+Where universal CSS is stored(tabs, color styles, etc)
+*/
+html {
+    --shade-1: #F1517F;
+    --side-color: #0F1223;
+    --size-timeline: 15%;
+    background: white;
+    font-family: "Roboto", "Courier New";
+}
+#side_tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background: var(--side-color);
+    z-index: 3;
+    box-shadow: 1px 1px 0.5em rgba(0, 0, 0, 0.7);
+}
+#home_page {
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    height: 10vh;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+}
+
+#todo_list_page {
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5em;
+    height: 10vh;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+} 
+
+#calendar_page {
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5em;
+    height: 10vh;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+}
+#workout_page {
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5em;
+    height: 10vh;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+}
+#food_page {
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5em;
+    height: 10vh;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+}
+
