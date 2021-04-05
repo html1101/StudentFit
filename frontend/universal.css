@@ -85,7 +85,8 @@ a {
     text-align: center;
     margin-top: 1em;
     font-size: 21px;
-    font-weight: 900;
+    font-family: "Arial", "Courier New";
+    font-weight: 900 !important;
 }
 
 .side_ {
