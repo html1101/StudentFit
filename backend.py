@@ -49,14 +49,39 @@ def post_csv():
         spl = i.split("=")
         dataO[spl[0]] = spl[1]
     """
-    Format: name="something", date="date for something", type="homework, test, assignment, etc"
+    Format: name="something", date="date for something", type="homework, test, assignment, etc", finished="whether it's formatted or not"
     """
     writeEvents = open("events.csv", "a")
     print(dataO)
-    writeEvents.write(F"\n{dataO.get('name')}, {dataO.get('date')}, {dataO.get('type')}")
+    writeEvents.write(F"\n{dataO.get('name')}, {dataO.get('date')}, {dataO.get('type')}, 0")
     writeEvents.close()
     return Response(open("events.csv", "r+").read(), "text/csv")
 
+@app.route("/events.csv", methods=["PUT"])
+def update_csv():
+    dataArr = request.data.decode("utf-8").split("&")
+    dataO = {}
+    for i in dataArr:
+        spl = i.split("=")
+        dataO[spl[0]] = spl[1]
+    # Find corresponding name and change finished type(we're going to assume that's why they're updating)
+    read_csv = open("events.csv", "r+").read()
+    newA = []
+    read_csv = read_csv.split("\n")
+    for i in read_csv:
+        i = i.split(", ")
+        newA.append(i)
+        if dataO["name"] == i[0] and dataO["date"] == i[1]:
+            newA[-1] = [i[0], i[1], dataO["type"], dataO["finished"]]
+    # Write to CSV now
+    newS = []
+    for i in newA:
+        print(i)
+        newS.append(", ".join(i))
+    with open("events.csv", "w+") as f:
+        f.write("\n".join(newS))
+    return "\n".join(newS)
+    
 
 @app.route("/events.csv", methods=['GET'])
 def get_csv():

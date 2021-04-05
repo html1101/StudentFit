@@ -1,15 +1,17 @@
-evt, 2020-04-30, reading
+evt, 2020-04-30, reading, 1
 gdfg, 0203-07-04, test
 dfgfdg, 2030-08-31, test
-hello, 2021-04-06, essay
-hello, 2021-04-07, homework
-hello, 2021-04-09, reading
+hello, 2021-04-06, essay, 1
+hello, 2021-04-07, homework, 0
+hello, 2021-04-09, reading, 1
 hello!, 2021-04-05, quiz
 hello, 3203-09-04, test
-Please work!, 2021-03-10, test
-English Reading, 2021-03-16, homework
-Jello, 2021-03-18, homework
-Jello!!!!, 2021-03-23, reading
-check it, 2021-03-17, quiz
-check it, 2021-03-18, quiz
-essay, 2021-04-23, essay
+Please work!, 2021-03-10, test, null
+English Reading, 2021-03-16, homework, 0
+Jello, 2021-03-18, homework, 0
+Jello!!!!, 2021-03-23, reading, 0
+check it, 2021-03-17, quiz, null
+check it, 2021-03-18, quiz, null
+essay, 2021-04-23, essay, 1
+testing, 2021-04-04, homework, 1
+English Paper, 2021-04-07, essay, 1

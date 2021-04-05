@@ -104,6 +104,7 @@ a {
     transition: 0.5s;
     float: left;
     text-align: left;
+    overflow: hidden;
 }
 
 a {

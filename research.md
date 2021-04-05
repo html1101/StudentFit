@@ -49,3 +49,19 @@ Unsalted Trail Mix has nuts which are good for an energy boost
 Greek yogurt is very high in protien and filling if you are hungry
 Dark Chocolate in moderation has antioxidants and natural stimulants which are good for blood flow to your brain
 Fruit Salads give you minerals, fibers, and a brain boost
+
+Test/ Project Presentation in the next 4 days you should eat:
+Fatty Fish has Omega 3's which is good for your memory
+Dark Chocolate helps with concentration and memory
+Eggs have protiens, leading to greater mental alertness
+Nuts for protiens
+Yogurt for protiens
+
+Studying/ Doing HW for the next 2 or more hours you should eat:
+Unsalted Trail Mix has nuts which are good for an energy boost
+Greek yogurt is very high in protien and filling if you are hungry
+Fruit Salads give you minerals, fibers, and a brain boost
+
+Test/ Project Presentation in the next 24 hrs/1 day you should eat:
+(Same foods as the foods you should eat when you have a test in the next 4 days plus...)
+Tea / any healthy caffiene option

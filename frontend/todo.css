@@ -1,6 +1,83 @@
 html {
     font-family: "Roboto", "Courier New";
+    background: rgb(238, 238, 238);
 }
 body {
     margin-left: calc(25% + 1em);
+}
+
+#n {
+    margin-left: 20px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: calc(75% - 2em);
+    left: 0.5em;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    min-height: 1.5em;
+    border-radius: 30px;
+    padding-top: 0.5em;
+    background: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+/* Hide default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    left: 0.75em;
+    top: 0.375em;
+    z-index: 2;
+}
+
+/* Custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0.375em;
+    left: 0.75em;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    transition: 0.25s;
+}
+
+/* On over, add background */
+.container:hover input ~ .checkmark {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Add bluc background when checkbox checked */
+.container input:checked ~ .checkmark {
+    transition: 0.25s;
+    background: var(--essay);
+}
+
+/* Create checkmark indicator */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ checkmark:after {
+    display: block;
+}
+
+/* Style checkmark */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }

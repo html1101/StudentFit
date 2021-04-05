@@ -69,12 +69,20 @@ const create_cal = (calendarDoc, event_list=[]) => {
             if((evt_date.getMonth() == currentDay.getMonth()) && (evt_date.getFullYear() == currentDay.getFullYear()) && (evt_date.getDate() == currentDay.getDate())) {
                 // Event match with date!
                 // Display name
-                day.innerHTML += `<br><div id='small-txt' class='${event_list[ii].type}'>${event_list[ii].name}</div>`
+                fullStr = `<br><div id='small-txt' class='${event_list[ii].type}'>`
+                // Check if already done
+                if(event_list[ii].finished == "1") {
+                    // Insert <del> tag
+                    fullStr += `<del>${event_list[ii].name}</del></div>`
+                }
+                else {
+                    fullStr += `${event_list[ii].name}</div>`
+                }
+                day.innerHTML += fullStr
                 // Get list of particular class(test, quiz, etc)
                 class_name = document.getElementsByClassName(event_list[ii].type)
                 class_name[class_name.length - 1].style.color = default_color_scheme[event_list[ii].type]
-                console.log(evt_date.toJSON().slice(0, 10), new Date().toJSON().slice(0, 10))
-                if(evt_date.toJSON().slice(0, 10) > new Date().toJSON().slice(0, 10)) {
+                if(evt_date.toJSON().slice(0, 10) > new Date().toJSON().slice(0, 10) && !event_list[ii].finished) {
                     // Compare two dates, add to timeline
                     v = document.createElement("li")
                     v.innerHTML = `${event_list[ii].name} - <i>Due ${evt_date.getMonth()}-${evt_date.getDate()}</i>`
@@ -100,10 +108,11 @@ input_month_yr.addEventListener("change", () => {
 
 
 class Event {
-    constructor(name, date, type) {
+    constructor(name, date, type, finished) {
         this.name = name
         this.date = date
         this.type = type
+        this.finished = finished
     }
     /* Can add extra functions later to allow for greater customizability*/
 }
@@ -151,7 +160,6 @@ document.getElementById("submit_pop").addEventListener("click", () => {
     event_date = document.getElementById("dateN").value,
     event_name = document.getElementById("eventN").value
 
-    console.log(event_type, event_date, event_name)
     xhttpG.open("POST", "/events.csv", false)
     xhttpG.send(`name=${event_name}&date=${event_date}&type=${event_type}`)
 

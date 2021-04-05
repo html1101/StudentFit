@@ -17,7 +17,7 @@ html {
 
 #food_rec_table {
     position: relative;
-    left: 25%;
-    top: calc(50% - 300px);
+    left: 25px;
+    top: 3em;
     vertical-align: middle;
 }
