@@ -43,4 +43,4 @@
 
 <h3>That Didn't Work. What Should I Do?</h3>
 
-- Submit an <a href="https://github.com/html1101/StudentFit/issues">issue here</a>, or email us at <a href="mailto:sarahcoding1011@gmail.com">sarahcoding1011@gmail.com</a>.
+- Submit an <a href="https://github.com/html1101/StudentFit/issues">issue here</a>, or email us at <a href="mailto:sarahhacks111@gmail.com">sarahhacks111@gmail.com</a>.
