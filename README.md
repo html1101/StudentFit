@@ -1,4 +1,4 @@
-<img src="StudentFitIcon.jpg" alt="StudentFit"></img>
+<img src="StudentFitIcon.jpg" alt="StudentFit" height="100px" text-align="center"></img>
 <h1>StudentFit</h1>
 <sub>A new agenda that gives priority to what matters: your health.</sub>
 
