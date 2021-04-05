@@ -2,7 +2,7 @@ evt, 2020-04-30, reading, 1
 gdfg, 0203-07-04, test
 dfgfdg, 2030-08-31, test
 hello, 2021-04-06, essay, 1
-hello, 2021-04-07, homework, 0
+hello, 2021-04-07, homework, 1
 hello, 2021-04-09, reading, 1
 hello!, 2021-04-05, quiz
 hello, 3203-09-04, test
@@ -14,4 +14,6 @@ check it, 2021-03-17, quiz, null
 check it, 2021-03-18, quiz, null
 essay, 2021-04-23, essay, 1
 testing, 2021-04-04, homework, 1
-English Paper, 2021-04-07, essay, 1
+English Paper, 2021-04-05, essay, 0
+English Paper, 2021-04-05, essay, 0
+Hackathon, 2021-04-05, test, 0

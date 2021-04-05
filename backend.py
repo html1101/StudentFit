@@ -44,7 +44,6 @@ def get_req(file_name):
 def post_csv():
     dataArr = request.data.decode("utf-8").split("&")
     dataO = {}
-    print(dataArr)
     for i in dataArr:
         spl = i.split("=")
         dataO[spl[0]] = spl[1]
@@ -52,7 +51,6 @@ def post_csv():
     Format: name="something", date="date for something", type="homework, test, assignment, etc", finished="whether it's formatted or not"
     """
     writeEvents = open("events.csv", "a")
-    print(dataO)
     writeEvents.write(F"\n{dataO.get('name')}, {dataO.get('date')}, {dataO.get('type')}, 0")
     writeEvents.close()
     return Response(open("events.csv", "r+").read(), "text/csv")
@@ -76,7 +74,6 @@ def update_csv():
     # Write to CSV now
     newS = []
     for i in newA:
-        print(i)
         newS.append(", ".join(i))
     with open("events.csv", "w+") as f:
         f.write("\n".join(newS))
@@ -87,7 +84,6 @@ def update_csv():
 def get_csv():
     # info
     readEvents = open("events.csv", "r+").read()
-    print(readEvents)
     return Response(readEvents, mimetype=MIME_types.get("csv", "text/plain"))
 
 

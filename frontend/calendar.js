@@ -82,10 +82,10 @@ const create_cal = (calendarDoc, event_list=[]) => {
                 // Get list of particular class(test, quiz, etc)
                 class_name = document.getElementsByClassName(event_list[ii].type)
                 class_name[class_name.length - 1].style.color = default_color_scheme[event_list[ii].type]
-                if(evt_date.toJSON().slice(0, 10) > new Date().toJSON().slice(0, 10) && !event_list[ii].finished) {
+                if(evt_date.toJSON().slice(0, 10) >= new Date().toJSON().slice(0, 10) && !event_list[ii].finished) {
                     // Compare two dates, add to timeline
                     v = document.createElement("li")
-                    v.innerHTML = `${event_list[ii].name} - <i>Due ${evt_date.getMonth()}-${evt_date.getDate()}</i>`
+                    v.innerHTML = `${event_list[ii].name} - <i>Due ${evt_date.getMonth()+1}-${evt_date.getDate()}</i>`
                     document.getElementById("upcoming_list").appendChild(v)
                 }
             }

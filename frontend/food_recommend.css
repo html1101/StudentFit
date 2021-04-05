@@ -1,23 +1,44 @@
 html {
     margin-left: 25%;
+    background: rgb(238, 238, 238);
 }
 
-#info_tab {
+/* #info_tab {
     position: absolute;
-    width: calc(90% - var(--size-timeline)); /*- Width of timeline bar*/
+    width: calc(90% - var(--size-timeline)); - Width of timeline bar
     left: 25%;
     height: 100%;
     top: 0;
-}
+} */
 
 #title {
     text-align: center;
+    display: block;
     font-size: 40px;
+    position: relative;
+    display: block;
 }
 
 #food_rec_table {
     position: relative;
-    left: 25px;
-    top: 3em;
-    vertical-align: middle;
+    display: block;
+    left: 25%;
+    top: 8em;
+    border: 1px solid black;
+}
+.foods {
+    position: relative;
+    display: block;
+    min-height: 1em;
+    background: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    width: calc(75% - 1em);
+    border-radius: 50px;
+    margin-top: 1em;
+}
+#why-2 {
+    margin-top: 10px;
 }
