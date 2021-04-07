@@ -33,7 +33,7 @@
 ```lisp
 > pip install flask pillow
 ```
-- Note: if Pip was given a different name in your installation of Pip(eg. <code>py -m pip</code>), replace <code>python</code> with that name. Keep this in mind as well when running <code>python</code> commands.
+- Note: if Pip was given a different name in your installation of Pip(eg. <code>py -m pip</code>), replace <code>pip</code> with that name. Keep this in mind as well when running <code>python</code> commands.
 - Now it's time to initialize the localhost server! Run this by executing the following:
 ```lisp
 > python backend.py
